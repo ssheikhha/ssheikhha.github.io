@@ -368,7 +368,14 @@ footer {
   text-align: justify;
   font-size:120%;
   font-weight: bold;
-  margin:0 0 5px;
+}
+
+.best_paper {
+  color:#FF0000;
+}
+
+.conference {
+  font-style: italic;
 }
 
 
@@ -389,7 +396,7 @@ footer {
 }
 
 .title {
-  font-size:120%;
+  font-size:110%;
   text-align: justify;
   font-weight: bold;
 }
