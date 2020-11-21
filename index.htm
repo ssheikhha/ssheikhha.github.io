@@ -152,7 +152,11 @@
 								Dataflow circuits can handle variable latencies and unpredictable memory dependencies which make them an effective solution for converting arbitrary software applications. In contrast to traditional datapaths, in dataflow circuits, buffers (the equivalent of registers) can be placed anywhere in the circuit without changing its semantics. This placement has a significant impact on the circuit’s timing and throughput.
 							</p>
 							<p>
-								The aim of the project was improving dataflow circuits' timing and throughput by strategic buffer placement (<i>published in FPGA'20</i>). Throughout this project, I (1) used a Mixed Integer Linear Programming model to implement the detection of the most significant loops in a control flow graph; (2) implemented a scalable version of our proposed placementt for buffer placement and sizing; (3) wrote an <a href="https://llvm.org/">LLVM</a> pass to calculate the execution frequencies of edges in a control flow graph. 
+								The aim of the project was improving dataflow circuits' timing and throughput by strategic buffer placement (<i>published in FPGA'20</i>). 
+								Throughout this project, I 
+								(1) utilized a Mixed-Integer Linear Programming model to extract the most critical cycles in a control flow graph;
+								(2) implemented a computationally efficient heuristic that achieves near-optimal results;
+								(3) developed an <a href="https://llvm.org/">LLVM</a> pass to calculate the edge frequencies in control flow graphs.
 							</p>
 							<p>
 								I continued remote work, focusing on detecting memory dependencies to minimize the use of Load-Store Queues. I am currently working on modeling the architecture and place-and-route of dataflow circuits using <a href="https://docs.verilogtorouting.org/en/latest/vpr/">VPR</a>.
